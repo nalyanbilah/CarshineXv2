@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< Updated upstream
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardController;
@@ -10,11 +9,6 @@ use App\Http\Controllers\TaskController;
 use App\Http\Controllers\PerformanceController;
 use App\Http\Controllers\LeaveController;
 use App\Http\Controllers\NotificationController;
-=======
-use App\Http\Controllers\TaskController;
-
-Route::get('/tasks', [TaskController::class, 'index']);
->>>>>>> Stashed changes
 
 // Auth Routes
 Route::get('/', function () {
@@ -45,6 +39,5 @@ Route::middleware(['auth'])->group(function () {
     
     Route::get('/notifications', [NotificationController::class, 'index'])->name('notifications');
     Route::post('/notifications/{notification}/read', [NotificationController::class, 'markAsRead'])->name('notifications.read');
-
     Route::post('/notifications/mark-all-read', [NotificationController::class, 'markAllAsRead'])->name('notifications.mark-all-read');
 });
