@@ -3,12 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\ScheduleController;
-use App\Http\Controllers\TaskController;
-use App\Http\Controllers\PerformanceController;
-use App\Http\Controllers\LeaveController;
-use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\Staff\DashboardController;
+use App\Http\Controllers\Staff\ScheduleController;
+use App\Http\Controllers\Staff\TaskController;
+use App\Http\Controllers\Staff\PerformanceController;
+use App\Http\Controllers\Staff\LeaveController;
+use App\Http\Controllers\Staff\NotificationController;
 
 // Auth Routes
 Route::get('/', function () {

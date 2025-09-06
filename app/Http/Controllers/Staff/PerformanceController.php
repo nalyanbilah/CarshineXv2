@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Staff;
 
+use App\Http\Controllers\Controller;
 use App\Models\Performance;
 use App\Models\Task;
 use Carbon\Carbon;
